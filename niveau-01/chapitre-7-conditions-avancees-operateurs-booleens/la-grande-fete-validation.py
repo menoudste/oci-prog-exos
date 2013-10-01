@@ -1,4 +1,3 @@
-
 ##################################
 # fichier la-grande-fete-validation.py
 # nom de l'exercice :  La grande fête
@@ -17,3 +16,16 @@
 
 # mettre votre code ici
 
+debut = int(input())
+fin = int(input())
+nbInvites = int(input())
+nbsuspects = 0
+
+for loop in range(nbInvites):
+   debutinvite = int(input())
+   fininvite = int(input())
+   
+   if ( not (debutinvite > fin)) and ( not (fininvite < debut)) :
+      nbsuspects = nbsuspects + 1
+
+print(nbsuspects)
