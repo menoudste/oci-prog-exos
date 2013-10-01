@@ -1,4 +1,3 @@
-
 ##################################
 # fichier espion-etranger-validation.py
 # nom de l'exercice :  Espion étranger
@@ -17,3 +16,15 @@
 
 # mettre votre code ici
 
+entree = int(input())
+sortie = int(input())
+nbPersonnes = int(input())
+suspects = 0
+
+for loop in range(nbPersonnes):
+      dates = int(input())
+      if dates <= sortie and dates >= entree:
+         suspects = suspects + 1
+
+print(suspects)
+         
