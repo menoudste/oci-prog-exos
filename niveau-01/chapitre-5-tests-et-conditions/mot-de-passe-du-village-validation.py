@@ -1,4 +1,3 @@
-
 ##################################
 # fichier mot-de-passe-du-village-validation.py
 # nom de l'exercice :  Mot de passe du village
@@ -17,3 +16,11 @@
 
 # mettre votre code ici
 
+codex = int(input())
+
+
+if codex == 64741:
+   print("Bon festin !")
+   
+else:
+   print("Allez-vous en !")
