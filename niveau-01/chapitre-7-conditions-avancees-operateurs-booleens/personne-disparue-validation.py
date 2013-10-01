@@ -1,4 +1,3 @@
-
 ##################################
 # fichier personne-disparue-validation.py
 # nom de l'exercice :  Personne disparue
@@ -17,3 +16,24 @@
 
 # mettre votre code ici
 
+numPersonne = int(input())
+tailleListe = int(input())
+
+
+indice = 0
+
+for loop in range(tailleListe):
+   numListe  = int(input())
+   if numListe == numPersonne :
+      indice = indice + 1
+
+if indice > 0:
+   print("Sorti de la ville")
+
+else:
+   print("Encore dans la ville")
+      
+      
+      
+      
+      
