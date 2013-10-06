@@ -1,4 +1,3 @@
-
 ##################################
 # fichier administration--comptes-annuels-entrainement.py
 # nom de l'exercice :  Administration : comptes annuels
@@ -16,4 +15,17 @@
 
 
 # mettre votre code ici
+
+somme = 0
+nombre = 0
+
+
+while nombre != -1:
+   nombre = int(input())
+   somme = somme + nombre
+
+somme = somme + 1
+print(somme)
+   
+   
 
