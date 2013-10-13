@@ -1,4 +1,3 @@
-
 ##################################
 # fichier departement-de-chimie--melange-explosif-validation.py
 # nom de l'exercice :  Département de chimie : mélange explosif
@@ -16,4 +15,22 @@
 
 
 # mettre votre code ici
+
+nbMesures = int(input())
+tempMin = int(input())
+tempMax = int(input())
+
+
+for loop in range (nbMesures):
+
+   temp = int(input())
+   
+   while temp >= tempMin or temp <= tempMax:
+      print("Rien à signaler")
+   break
+
+   
+print("Alerte !!")
+   
+   
 
