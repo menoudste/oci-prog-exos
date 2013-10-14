@@ -18,28 +18,15 @@
 
 nbPierresDispo = int(input())
 nbPierres = 0
-nbEtages = 1
-total = 0
-cote = 1
+nbEtages = 0
 
 
-while nbPierresDispo > total :
-   nbPierres = cote**2
-   cote = cote + 1
-   nbEtages = nbEtages + 1
-   total = total + nbPierres
+while nbPierresDispo > (nbPierres + nbEtages**2):
+   nbEtages += 1
+   nbPierres = nbPierres + nbEtages**2
    
-if nbPierresDispo > 1:   
-    total = total - ((cote-1)**2)#Sinon, un étage de pierres en trop est comptabilisé
+print(nbEtages)
+print(nbPierres)
 
-    print(nbEtages - 2) #Sinon, il y aurait 2 étages de trop
-    print(total)
 
-if nbPierresDispo == 1 :
-    print("1")
-    print("1")
-
-if nbPierresDispo <= 0 :
-    print("0")
-    print("0")
 
