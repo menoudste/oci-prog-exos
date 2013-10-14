@@ -16,21 +16,34 @@
 
 # mettre votre code ici
 
+nbMesuresEff = 0
+
+
 nbMesures = int(input())
 tempMin = int(input())
 tempMax = int(input())
+temp = int(input())
 
+if temp > tempMax or temp < tempMin:
+   print("Alerte !!")
 
-for loop in range (nbMesures):
-
+while temp >= tempMin and temp <= tempMax and nbMesuresEff <= nbMesures:
+   print("Rien à signaler")
+   nbMesuresEff += 1
    temp = int(input())
    
-   while temp >= tempMin or temp <= tempMax:
-      print("Rien à signaler")
-   break
+if temp > tempMax or temp < tempMin:
+   print("Alerte !!")
 
    
-print("Alerte !!")
+
+   
+
+   
    
    
 
+   
+
+   
+   
