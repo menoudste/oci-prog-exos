@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 13-construction-de-maisons-obligatoire.py
 # nom de l'exercice : Construction de maisons
@@ -16,4 +15,15 @@
 
 
 # mettre votre code ici
+
+from math import *
+
+kgNec = float(input())
+
+
+nbSacs = kgNec / 60
+
+nbSacs2 = ceil(nbSacs)
+
+print(nbSacs2 * 45)
 
