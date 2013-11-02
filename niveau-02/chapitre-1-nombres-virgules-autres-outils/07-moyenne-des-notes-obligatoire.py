@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 07-moyenne-des-notes-obligatoire.py
 # nom de l'exercice : Moyenne des notes
@@ -17,3 +16,12 @@
 
 # mettre votre code ici
 
+nbNotes = int(input())
+total = 0
+
+for loop in range (nbNotes) :
+   note = int(input()) 
+   total = total + note
+
+print(total / nbNotes)
+   
