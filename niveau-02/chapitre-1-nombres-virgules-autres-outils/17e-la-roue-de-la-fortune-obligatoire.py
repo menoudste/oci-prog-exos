@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 17e-la-roue-de-la-fortune-obligatoire.py
 # nom de l'exercice : La roue de la fortune
@@ -17,3 +16,11 @@
 
 # mettre votre code ici
 
+nbZones = int(input())
+zone1 = 0
+zone2 = 0
+
+zone1 = nbZones % 25
+zone2 = zone1 + ( nbZones // 24 )
+
+print(zone2)
