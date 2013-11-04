@@ -16,11 +16,4 @@
 
 # mettre votre code ici
 
-nbZones = int(input())
-zone1 = 0
-zone2 = 0
-
-zone1 = nbZones % 25
-zone2 = zone1 + ( nbZones // 24 )
-
-print(zone2)
+print(int(input()) % 24)
