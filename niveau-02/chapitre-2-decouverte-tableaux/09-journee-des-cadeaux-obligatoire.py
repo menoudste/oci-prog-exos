@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 09-journee-des-cadeaux-obligatoire.py
 # nom de l'exercice : Journée des cadeaux
@@ -17,3 +16,30 @@
 
 # mettre votre code ici
 
+from math import*
+
+nbHabitants = int(input())
+moyenne = 0
+fortune = [0] * nbHabitants
+
+
+if nbHabitants % 2 == 0 :
+   for indice in range(nbHabitants) :
+      fortune[indice] = int(input())
+   
+   fortune.sort()
+   
+   moyenne = (fortune[nbHabitants / 2 - 1] + fortune[nbHabitants / 2]) / 2
+   print(moyenne)
+
+else : 
+   for indice in range(nbHabitants):
+      fortune[indice] = int(input())
+   
+   fortune.sort()
+      
+   moyenne = (fortune[(nbHabitants - 1) / 2])
+
+   print(moyenne)
+      
+   
