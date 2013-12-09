@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 03b-fiches-d-inscription-obligatoire.py
 # nom de l'exercice : Fiches d’inscription
@@ -17,3 +16,9 @@
 
 # mettre votre code ici
 
+nbPersonnes = int(input())
+
+for loop in range (nbPersonnes):
+   nomPrenom = input().split(" ")
+   print(nomPrenom [1], end = " ")
+   print(nomPrenom [0])
