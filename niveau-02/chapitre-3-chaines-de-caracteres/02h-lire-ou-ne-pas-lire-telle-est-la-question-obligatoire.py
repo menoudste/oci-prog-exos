@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02h-lire-ou-ne-pas-lire-telle-est-la-question-obligatoire.py
 # nom de l'exercice : Lire ou ne pas lire, telle est la question
@@ -17,3 +16,17 @@
 
 # mettre votre code ici
 
+nbLivres = int(input())
+livre = input()
+
+print(livre)
+longueurTitreAvant = len(livre)
+
+for loop in range (nbLivres - 1): # Car le premier livre est défini avant 
+                                  # la première entrée dans la boucle
+   livre = input()
+   longueurTitre = len(livre)
+   
+   if longueurTitre > longueurTitreAvant:
+      print(livre)
+      longueurTitreAvant = longueurTitre
