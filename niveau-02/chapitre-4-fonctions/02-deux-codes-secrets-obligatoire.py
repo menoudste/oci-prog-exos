@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02-deux-codes-secrets-obligatoire.py
 # nom de l'exercice : Deux codes secrets
@@ -17,3 +16,21 @@
 
 # mettre votre code ici
 
+def code(script) :
+      
+      scriptTest = 0
+      
+      while scriptTest != script :
+         scriptTest = int(input())
+         print("Entrez le code :")
+      
+      
+      return script
+      
+code(4242)
+
+print("Premier code bon.")
+
+code(2121)
+
+print("Bravo.")
