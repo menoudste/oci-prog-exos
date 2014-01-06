@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 05-distance-obligatoire.py
 # nom de l'exercice : Distance
@@ -17,3 +16,21 @@
 
 # mettre votre code ici
 
+from math import*
+
+def distance(x1, y1, x2, y2):
+   
+   distanceEuclidienne = sqrt((x2 - x1) **2 + (y2 - y1) **2)
+   
+   print(distanceEuclidienne)
+   
+   return distanceEuclidienne
+
+
+distance(float(input()), float(input()), float(input()), float(input()))
+
+
+      
+      
+   
+   
